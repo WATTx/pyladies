@@ -2,7 +2,9 @@ from machine import Pin
 import micropython
 from time import sleep
 
+# Recommended when using interrupts
 micropython.alloc_emergency_exception_buf(100)
+
 led = Pin(D5, Pin.OUT)
 
 do_connect()
